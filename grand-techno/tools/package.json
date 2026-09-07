@@ -1,0 +1,6 @@
+{
+  "name": "grand-techno-image-tools",
+  "private": true,
+  "scripts": { "enhance": "node enhance-images.cjs" },
+  "dependencies": { "sharp": "0.35.4" }
+}

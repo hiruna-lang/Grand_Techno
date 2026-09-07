@@ -1,6 +1,7 @@
 """Regenerate the seven static HTML pages. No runtime build or server dependency."""
 from pathlib import Path
 from html import escape
+from image_assets import responsive_images
 
 ROOT = Path(__file__).parent
 NAV = [('index','Home'),('restaurant','Restaurant'),('leisure','Leisure Park'),('celebrations','Celebrations'),('gallery','Gallery'),('about','About'),('contact','Contact')]
@@ -131,5 +132,5 @@ for slug,(title,description,body,n) in PAGES.items():
  extra=f'<script src="js/{slug}.js" defer></script>' if slug in ['gallery','contact'] else ''
  html=f'''<!DOCTYPE html>
 <html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#b51227"><title>{escape(title)}</title><meta name="description" content="{escape(description)}"><meta property="og:type" content="website"><meta property="og:title" content="{escape(title)}"><meta property="og:description" content="{escape(description)}"><meta property="og:image" content="assets/images/IMG_{n}.JPG.jpeg"><meta property="og:image:alt" content="{escape(IMAGES[n][0])}"><meta property="og:site_name" content="Grand Techno"><link rel="icon" type="image/svg+xml" href="assets/logo/gt-monogram.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/responsive.css"><link rel="stylesheet" href="css/animations.css"><script src="assets/vendor/gsap.min.js" defer></script><script src="assets/vendor/ScrollTrigger.min.js" defer></script><script src="js/main.js" defer></script><script src="js/animations.js" defer></script>{extra}<noscript><style>.page-intro,.menu-toggle{{display:none}}@media(max-width:1050px){{.desktop-nav{{display:flex;flex-wrap:wrap;gap:3px 14px}}.desktop-nav a{{padding:3px 0}}.nav-shell{{height:auto;min-height:84px;flex-wrap:wrap;padding-block:12px}}.site-header{{position:relative}}.header-cta{{display:none}}}}</style></noscript></head><body data-page="{slug}">{header(slug)}<main id="main">{body}</main>{footer()}</body></html>'''
- (ROOT/f'{slug}.html').write_text(html,encoding='utf-8')
+ (ROOT/f'{slug}.html').write_text(responsive_images(html),encoding='utf-8')
 print('Generated 7 static HTML pages.')

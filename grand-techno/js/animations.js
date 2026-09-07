@@ -18,7 +18,7 @@
         gsap.to(intro, { yPercent: -101, delay: 0.75, duration: 0.85, ease: 'power3.inOut', onComplete: () => { intro.remove(); clearTimeout(safetyTimer); } });
       }
       const hero = gsap.timeline({ delay });
-      hero.from('.hero-image', { scale: 1.08, duration: 1.65, ease: 'power2.out' }, 0)
+      hero.from('.hero-image', { scale: 1.04, duration: 1.65, ease: 'power2.out', clearProps: 'transform' }, 0)
         .from('.hero .title-line > span', { yPercent: 108, duration: 0.9, stagger: 0.11, ease: 'power3.out' }, 0.08)
         .from('.hero-subtitle, .hero-description', { y: 18, opacity: 0, duration: 0.75, stagger: 0.1 }, 0.3)
         .from('.hero .actions .btn', { y: 16, opacity: 0, duration: 0.6, stagger: 0.1 }, 0.5);

@@ -13,3 +13,8 @@ Completed on 7 September 2026.
 The connected preview browser reported no available browsers. No rendered desktop/mobile screenshots or browser-console inspection could be completed. DOM tests use simulated layout and dialog behavior; they do not establish pixel accuracy or native browser dialog behavior. Responsive rules cover the requested desktop, tablet and mobile sizes, but those viewport layouts still need a visual pass in Live Server.
 
 No inquiry was sent. WhatsApp URL creation was tested with a stubbed window-opening function. The site intentionally waits for a verified client number before offering a recipient link. External social profiles, opening hours and the exact Google Maps pin remain unconfirmed.
+
+
+## Photo enhancement verification
+
+All 42 source JPEG hashes still match the uploaded originals. All 126 WebP variants and every responsive image path across seven pages were checked. The daytime pool and nighttime hero derivatives were visually inspected for natural appearance. The 72 DOM interaction assertions still pass. Rendered browser verification remains unavailable; original photographic resolution still limits fine detail.
