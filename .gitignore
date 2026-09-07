@@ -1,0 +1,19 @@
+# Local QA dependencies and inspection artifacts
+.qa/
+node_modules/
+__pycache__/
+*.pyc
+
+# Source duplicates and visual references; website photos live in assets/images.
+/images/
+/reference_ui/
+
+# Local editor, environment and operating-system files
+.vscode/
+.idea/
+.env
+.env.*
+!.env.example
+Thumbs.db
+.DS_Store
+*.log
