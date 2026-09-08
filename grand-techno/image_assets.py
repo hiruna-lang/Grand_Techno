@@ -18,9 +18,8 @@ def responsive_images(html):
             return tag
         variants = manifest[number.group(1)]['variants']
         large = variants[-1]
-        # Full-height mobile heroes crop a wide source; request enough pixels
-        # for the cropped area, instead of sizing only to the narrow viewport.
-        sizes = '(max-width: 767px) 1200px, 100vw' if 'hero-image' in tag else 'auto, 100vw'
+        # Hero photos are contained panels, rather than full-screen backdrops.
+        sizes = '(max-width: 767px) calc(100vw - 44px), (max-width: 1440px) 45vw, 620px' if 'hero-image' in tag else 'auto, 100vw'
         for attr in ('src', 'srcset', 'sizes', 'width', 'height'):
             tag = re.sub(rf'\s{attr}="[^"]*"', '', tag)
         srcset = ', '.join(f'{v["src"]} {v["width"]}w' for v in variants)

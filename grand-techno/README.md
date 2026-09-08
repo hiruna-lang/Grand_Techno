@@ -42,7 +42,7 @@ ScrollTrigger registration, viewport reveals and responsive animation contexts f
 
 The website serves non-AI WebP derivatives from `assets/images/enhanced/`. All 42 original JPEGs remain unchanged. Variants use Lanczos resizing and restrained sharpening without scene reconstruction, colour grading or generated details. Each image has three responsive sizes; large landscape versions reach 2400 pixels wide, with upscaling limited to 2? the source dimensions. Upscaling improves rendering control but does not recover missing photographic detail.
 
-The gallery viewer opens the largest version. Mobile hero sizing accounts for the wide photo crop. Hero animation clears its transform when finished to avoid leaving the image on a transformed layer.
+The gallery viewer opens the largest version. Opening photo panels use responsive sizes matched to their contained width and fade in without zooming. Contact, Gallery and About use short text introductions; Home and experience pages pair text with modest photo panels. No page uses a viewport-height opening image.
 
 Optional regeneration: run `npm install --prefix grand-techno/tools` and `npm run enhance --prefix grand-techno/tools` from the repository root, followed by `python grand-techno/image_assets.py`. These tools are for authoring only; the website still needs no runtime build or installation. `build-pages.py` also applies the responsive image manifest automatically.
 
