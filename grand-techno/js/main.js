@@ -46,8 +46,16 @@ window.GRAND_TECHNO = Object.freeze({
   });
   desktop.addEventListener('change', event => { if (event.matches && menuOpen) setMenu(false, false); });
   let scrollQueued = false;
+  let headerFloating = header?.classList.contains('scrolled') || false;
   function updateHeader() {
-    header?.classList.toggle('scrolled', window.scrollY > 40);
+    // Separate enter/exit thresholds prevent repeated toggles near the boundary
+    // during slow trackpad scrolling and elastic overscroll.
+    const scrollY = Math.max(0, window.scrollY);
+    const nextFloating = headerFloating ? scrollY > 16 : scrollY > 64;
+    if (nextFloating !== headerFloating) {
+      headerFloating = nextFloating;
+      header?.classList.toggle('scrolled', headerFloating);
+    }
     scrollQueued = false;
   }
   window.addEventListener('scroll', () => {
