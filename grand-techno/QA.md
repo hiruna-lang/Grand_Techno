@@ -18,3 +18,8 @@ No inquiry was sent. WhatsApp URL creation was tested with a stubbed window-open
 ## Photo enhancement verification
 
 All 42 source JPEG hashes still match the uploaded originals. All 126 WebP variants and every responsive image path across seven pages were checked. The daytime pool and nighttime hero derivatives were visually inspected for natural appearance. The 72 DOM interaction assertions still pass. Rendered browser verification remains unavailable; original photographic resolution still limits fine detail.
+
+
+## Shallow photo banner update
+
+Applied the supplied screenshot?s short photographic title-banner treatment to all seven pages. The reference URL could not be loaded, so visual direction came from the screenshot. Verified identical navbar markup and navbar-related CSS against the prior version, existing photo assets, valid CSS syntax and 72 passing interaction assertions. Live browser visual verification remains unavailable. Changes were made locally without committing or pushing.

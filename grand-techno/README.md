@@ -42,8 +42,11 @@ ScrollTrigger registration, viewport reveals and responsive animation contexts f
 
 The website serves non-AI WebP derivatives from `assets/images/enhanced/`. All 42 original JPEGs remain unchanged. Variants use Lanczos resizing and restrained sharpening without scene reconstruction, colour grading or generated details. Each image has three responsive sizes; large landscape versions reach 2400 pixels wide, with upscaling limited to 2? the source dimensions. Upscaling improves rendering control but does not recover missing photographic detail.
 
-The gallery viewer opens the largest version. Opening photo panels use responsive sizes matched to their contained width and fade in without zooming. Contact, Gallery and About use short text introductions; Home and experience pages pair text with modest photo panels. No page uses a viewport-height opening image.
+The gallery viewer opens the largest version. All seven pages use shallow image banners beneath the unchanged navigation: a real venue photo, dark gradient, white title and subtitle. The home banner also includes reservation and exploration links. Inner banners are 280px on desktop and 210px on mobile before content-driven expansion; the home banner is 350px on desktop and 290px on mobile. Responsive image sources account for the banner width. Photos fade in without zooming, and no banner uses viewport-height sizing.
 
 Optional regeneration: run `npm install --prefix grand-techno/tools` and `npm run enhance --prefix grand-techno/tools` from the repository root, followed by `python grand-techno/image_assets.py`. These tools are for authoring only; the website still needs no runtime build or installation. `build-pages.py` also applies the responsive image manifest automatically.
 
 Processing uses [Sharp sharpening](https://sharp.pixelplumbing.com/api-operation/#sharpen) and [resizing](https://sharp.pixelplumbing.com/api-resize/).
+
+
+The homepage now has a dedicated garden-photo opening with a gold-and-white heading, reservation and WhatsApp buttons, and an overlapping five-item experience strip. Its content-driven height starts at 520px on desktop; mobile uses natural content height. The six inner-page banners and existing navbar are unchanged.

@@ -21,8 +21,9 @@
       const heroImage = document.querySelector('.hero-image');
       if (heroImage) hero.from(heroImage, { opacity: 0, duration: 0.7, clearProps: 'opacity' }, 0);
       hero.from('.hero .title-line > span', { yPercent: 108, duration: 0.9, stagger: 0.11, ease: 'power3.out' }, 0.08)
-        .from('.hero-subtitle, .hero-description', { y: 18, opacity: 0, duration: 0.75, stagger: 0.1 }, 0.3)
-        .from('.hero .actions .btn', { y: 16, opacity: 0, duration: 0.6, stagger: 0.1 }, 0.5);
+        .from('.hero-subtitle, .hero-description', { y: 18, opacity: 0, duration: 0.75, stagger: 0.1 }, 0.3);
+      const heroButtons = document.querySelectorAll('.hero .actions .btn');
+      if (heroButtons.length) hero.from(heroButtons, { y: 16, opacity: 0, duration: 0.6, stagger: 0.1 }, 0.5);
       gsap.utils.toArray('[data-reveal]').forEach(el => {
         gsap.from(el, { y: 40, opacity: 0, duration: 0.85, ease: 'power2.out', scrollTrigger: { trigger: el, start: 'top 92%', once: true } });
       });
