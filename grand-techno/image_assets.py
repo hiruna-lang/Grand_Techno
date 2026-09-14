@@ -19,7 +19,11 @@ def responsive_images(html):
         variants = manifest[number.group(1)]['variants']
         large = variants[-1]
         # Shallow banners span the viewport; account for mobile cover cropping.
-        sizes = '(max-width: 767px) 640px, 100vw' if 'hero-image' in tag else 'auto, 100vw'
+        sizes = '(max-width: 767px) 1440px, 100vw' if 'hero-slide' in tag else ('(max-width: 767px) 640px, 100vw' if 'hero-image' in tag else 'auto, 100vw')
+        if 'hero-collage-photo' in tag:
+            sizes = '(max-width: 767px) 100vw, 65vw' if 'collage-main' in tag else '(max-width: 767px) 50vw, 35vw'
+        if 'showcase-photo' in tag:
+            sizes = '(max-width: 767px) 70vw, 40vw'
         for attr in ('src', 'srcset', 'sizes', 'width', 'height'):
             tag = re.sub(rf'\s{attr}="[^"]*"', '', tag)
         srcset = ', '.join(f'{v["src"]} {v["width"]}w' for v in variants)
