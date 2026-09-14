@@ -4,7 +4,7 @@ window.GRAND_TECHNO = Object.freeze({
   whatsappNumber: '94724832444',
   phoneNumber: '94724832444',
   phoneDisplay: '+94 72 483 2444',
-  mapsUrl: '',
+  mapsUrl: 'https://www.google.com/maps/search/?api=1&query=Grand%20Techno%20Alupathwila%20Sri%20Lanka',
 });
 
 (() => {
@@ -82,7 +82,7 @@ window.GRAND_TECHNO = Object.freeze({
     });
   }
   if (config.mapsUrl && /^https:\/\//.test(config.mapsUrl)) {
-    const mapLink = document.querySelector('.map-marker a');
+    const mapLink = document.querySelector('[data-map-link]');
     if (mapLink) mapLink.href = config.mapsUrl;
   }
 })();

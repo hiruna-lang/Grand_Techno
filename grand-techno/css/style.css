@@ -106,3 +106,24 @@ body[data-page="index"] #discover{padding-top:58px}
 @media(max-width:1200px){.premium-footer .footer-main{gap:24px;grid-template-columns:1.4fr .8fr .9fr 1.2fr;padding-inline:44px}.premium-footer .brand-name{font-size:16px}.premium-footer .footer-personality{gap:15px}.premium-footer .footer-small-motto{padding-left:12px;letter-spacing:.15em}.premium-footer .footer-about{padding-right:18px}}
 @media(max-width:1000px){.premium-footer .footer-main{grid-template-columns:1.4fr 1fr;gap:35px 40px;padding:42px var(--gutter)}.premium-footer .footer-about{grid-column:1;grid-row:1/3}.premium-footer .footer-column{border:0;padding:0}.premium-footer .footer-get-in-touch{grid-column:1/-1;border-top:1px solid #b7976238;padding-top:28px;display:grid;grid-template-columns:1.2fr 1fr;column-gap:40px}.premium-footer .footer-get-in-touch>h2{grid-column:1}.premium-footer address{grid-column:1}.premium-footer .footer-social{grid-column:2;grid-row:1/3;border-top:0;border-left:1px solid #b7976238;margin:0;padding:0 0 0 30px}.premium-footer .footer-base{grid-template-columns:1fr 1fr;padding:22px var(--gutter)}.premium-footer .footer-closing{grid-column:1/-1;grid-row:1}.premium-footer .footer-place{text-align:right}.premium-footer .footer-social-icon{width:40px;height:40px}}
 @media(max-width:600px){.premium-footer .footer-main{grid-template-columns:1fr 1fr;gap:30px 22px;padding:38px var(--gutter) 30px}.premium-footer .footer-about{grid-column:1/-1;grid-row:auto;border-right:0;border-bottom:1px solid #b7976238;padding:0 0 28px}.premium-footer .footer-description{max-width:410px}.premium-footer .brand-name{font-size:19px}.premium-footer .footer-personality{gap:28px}.premium-footer .footer-column{gap:5px}.premium-footer .footer-column a{min-height:36px;display:flex;align-items:center;font-size:12px}.premium-footer h2{font-size:8px;letter-spacing:.2em}.premium-footer .footer-get-in-touch{display:block;padding-top:25px}.premium-footer address{gap:10px}.premium-footer address a{min-height:34px;font-size:12px}.premium-footer .footer-social{border:0;border-top:1px solid #b7976238;margin-top:22px;padding:22px 0 0}.premium-footer .footer-social-row{gap:20px}.premium-footer .footer-social-icon{width:40px;height:40px}.premium-footer .footer-base{display:flex;flex-direction:column;gap:20px;padding:24px var(--gutter);text-align:center}.premium-footer .footer-closing{order:-1;width:100%}.premium-footer .footer-place{border:0;border-top:1px solid #b7976238;padding:16px 0 0;width:100%;text-align:center}.premium-footer .footer-copyright{font-size:9px}.premium-footer .footer-place>span{font-size:7px}}
+
+/* Location card: use the embedded map's native Maps control. */
+.location-map-card{margin-top:20px;padding:22px;background:white;border:1px solid var(--line);border-radius:10px;box-shadow:0 10px 30px #1717170b;overflow:hidden}
+.location-map{display:block;width:100%;height:300px;border:0;border-radius:3px;background:#e6eadf}
+.location-map-details{padding:20px 0 2px}
+.location-map-details>div{min-width:0}.location-map-details h4{font-size:26px;line-height:1.15}.location-map-details p{font-size:12px;margin-top:7px}
+
+@media(min-width:768px) and (max-width:1050px){.location-map{height:340px}}
+@media(max-width:767px){.location-map-card{padding:14px;margin-top:16px}.location-map{height:270px}.location-map-details{padding-top:16px}.location-map-details h4{font-size:25px}.location-map-details p{font-size:12px}}
+@media(max-width:430px){.location-map{height:240px}.location-map-details h4{font-size:24px}}
+
+/* Contact service colours are scoped to the four contact cards. */
+.contact-card--whatsapp{--service-color:#16883f;--service-tint:#e6f5eb}
+.contact-card--phone{--service-color:#2563eb;--service-tint:#eaf0ff}
+.contact-card--facebook{--service-color:#1877f2;--service-tint:#eaf2ff}
+.contact-card--hours{--service-color:#956715;--service-tint:#f7f0df}
+.contact-card .contact-service-icon{display:inline-flex;align-items:center;justify-content:center;width:46px;height:46px;border-radius:50%;background:var(--service-tint);color:var(--service-color);margin-bottom:14px}
+.contact-card .contact-service-icon .icon{width:25px;height:25px;color:inherit;margin:0}
+.contact-card .contact-service-icon .contact-whatsapp-logo{fill:currentColor;stroke:none}
+
+.contact-card .contact-service-icon .contact-facebook-logo{fill:currentColor;stroke:none}
