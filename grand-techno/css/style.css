@@ -173,3 +173,24 @@ body[data-page="index"] #discover{padding-top:58px}
 @media(max-width:1050px){.home-showcase{gap:22px;grid-template-columns:1fr 1.2fr}.showcase-copy h1{font-size:40px}.showcase-gallery{height:470px}.showcase-tile figcaption{padding-inline:9px}.showcase-tile figcaption strong{font-size:16px}}
 @media(max-width:767px){.home-showcase{grid-template-columns:1fr;padding:20px var(--gutter) 30px;gap:20px}.showcase-copy{padding-block:10px}.showcase-copy h1{font-size:clamp(36px,8vw,52px)}.showcase-copy .hero-description{font-size:14px}.showcase-gallery{height:400px}.showcase-set{grid-template-columns:1.2fr 1fr 1fr;gap:5px}.showcase-tile.tile-0 figcaption strong{font-size:22px}.showcase-tile figcaption span{font-size:7px;letter-spacing:.08em}.showcase-tile figcaption strong{font-size:15px}}
 @media(prefers-reduced-motion:reduce){.showcase-set{transition:none}}
+/* Brand-red accents limited to the homepage opening and its experience strip. */
+.home-showcase{background:linear-gradient(115deg,#fff5f5 0%,#faf9f5 48%)}
+.home-showcase .showcase-copy>.eyebrow,.home-showcase .home-ornament{color:var(--red)}
+.home-showcase .showcase-copy .home-whatsapp{color:var(--red);border-color:var(--red);background:#fffafa}
+.home-showcase .showcase-copy .home-whatsapp:hover{background:#fce8ec}
+.home-showcase+.home-features{border-color:#e8bdc5;border-top:3px solid var(--red);box-shadow:0 12px 30px #8e12300d}
+.home-showcase+.home-features .home-feature{border-right-color:#ebccd2}
+.home-showcase+.home-features .home-feature>.icon{color:var(--red)}
+.home-showcase+.home-features .home-feature strong{color:#8d1530}
+.home-showcase+.home-features .home-feature:hover strong{color:var(--red)}
+/* Red navigation with warm gold reservation controls. */
+.site-header:before,.site-header.scrolled:before{background:var(--red);border-color:#ffffff20}
+.site-header .brand,.site-header .brand-name,.site-header .brand-location,.site-header .monogram,.site-header .menu-toggle{color:#fff}
+.site-header .monogram{border-right-color:#efcf86}
+.site-header .desktop-nav a{color:#fff}
+.site-header .desktop-nav a:hover,.site-header .desktop-nav a[aria-current=page]{color:#ffe2a1}
+.site-header .desktop-nav a:after{background:#ffe2a1}
+.site-header .header-cta{background:#edc76c;border-color:#edc76c;color:#35230b;font-weight:600}
+.site-header .header-cta:before{background:#ffdda0}
+.site-header .header-cta:hover{border-color:#ffdda0;color:#35230b}
+.site-header a:focus-visible,.site-header button:focus-visible{outline:2px solid #fff;outline-offset:4px}
