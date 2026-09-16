@@ -7,6 +7,9 @@
   const count = document.querySelector('#gallery-count');
   const viewer = document.querySelector('.lightbox');
   const image = viewer.querySelector('img');
+  const video = document.createElement('video');
+  video.controls = true; video.playsInline = true; video.preload = 'none'; video.hidden = true;
+  image.after(video);
   const caption = viewer.querySelector('figcaption');
   const counter = viewer.querySelector('.lightbox-counter');
   const reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
@@ -32,10 +35,18 @@
   }));
   function show(offset) {
     index = (offset + visible.length) % visible.length;
-    const source = visible[index].querySelector('img');
-    image.src = source.src;
-    image.alt = source.alt;
-    caption.textContent = source.alt;
+    video.pause(); video.removeAttribute('src'); video.load();
+    const item = visible[index];
+    const isVideo = item.dataset.media === 'video';
+    image.hidden = isVideo; video.hidden = !isVideo;
+    if (isVideo) {
+      video.src = item.dataset.src;
+      caption.textContent = item.dataset.title;
+    } else {
+      const source = item.querySelector('img');
+      image.src = source.src; image.alt = source.alt;
+      caption.textContent = source.alt;
+    }
     counter.textContent = `${String(index + 1).padStart(2, '0')} / ${String(visible.length).padStart(2, '0')}`;
   }
   function open(item) {
@@ -50,11 +61,13 @@
   viewer.querySelector('.lightbox-prev').addEventListener('click', () => show(index - 1));
   viewer.querySelector('.lightbox-next').addEventListener('click', () => show(index + 1));
   viewer.addEventListener('close', () => {
+    video.pause(); video.removeAttribute('src'); video.load();
     document.body.classList.remove('locked');
     opener?.focus({ preventScroll: true });
   });
   viewer.addEventListener('click', event => { if (event.target === viewer) viewer.close(); });
   viewer.addEventListener('keydown', event => {
+    if (event.target === video) return;
     if (event.key === 'ArrowLeft') { event.preventDefault(); show(index - 1); }
     if (event.key === 'ArrowRight') { event.preventDefault(); show(index + 1); }
     // Native <dialog> supplies Escape dismissal and focus containment.

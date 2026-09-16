@@ -1,0 +1,92 @@
+[
+  {
+    "src": "assets/images/WhatsApp Image 2026-09-15 at 11.50.11.jpeg",
+    "type": "image",
+    "title": "Venue lights across the fields at dusk",
+    "width": 960,
+    "height": 1280,
+    "category": "Night View"
+  },
+  {
+    "src": "assets/images/WhatsApp Image 2026-09-15 at 11.50.44.jpeg",
+    "type": "image",
+    "title": "Garden pavilion surrounded by greenery",
+    "width": 2560,
+    "height": 1706,
+    "category": "Leisure Park"
+  },
+  {
+    "src": "assets/images/WhatsApp Image 2026-09-15 at 11.50.45.jpeg",
+    "type": "image",
+    "title": "Open-air dining beneath red lanterns",
+    "width": 1600,
+    "height": 1066,
+    "category": "Restaurant"
+  },
+  {
+    "src": "assets/images/WhatsApp Image 2026-09-15 at 11.50.47.jpeg",
+    "type": "image",
+    "title": "White pavilions and landscaped gardens",
+    "width": 1600,
+    "height": 1066,
+    "category": "Leisure Park"
+  },
+  {
+    "src": "assets/images/WhatsApp Image 2026-09-15 at 11.50.48.jpeg",
+    "type": "image",
+    "title": "Swimming pool overlooking the fields",
+    "width": 1600,
+    "height": 1066,
+    "category": "Leisure Park"
+  },
+  {
+    "src": "assets/images/WhatsApp Image 2026-09-15 at 11.52.45.jpeg",
+    "type": "image",
+    "title": "Colourful lanterns above the garden walkway",
+    "width": 1280,
+    "height": 852,
+    "category": "Leisure Park"
+  },
+  {
+    "src": "assets/images/WhatsApp Image 2026-09-15 at 11.53.35 (1).jpeg",
+    "type": "image",
+    "title": "Grand Techno illuminated at night",
+    "width": 1080,
+    "height": 1440,
+    "category": "Night View"
+  },
+  {
+    "src": "assets/images/WhatsApp Image 2026-09-15 at 11.53.35.jpeg",
+    "type": "image",
+    "title": "Aerial view of Grand Techno Leisure",
+    "width": 1600,
+    "height": 900,
+    "category": "Leisure Park"
+  },
+  {
+    "src": "assets/images/WhatsApp Image 2026-09-15 at 11.53.36.jpeg",
+    "type": "image",
+    "title": "Pool and gardens after dark",
+    "width": 1080,
+    "height": 1440,
+    "category": "Night View"
+  },
+  {
+    "src": "assets/videos/WhatsApp Video 2026-09-15 at 11.53.31.mp4",
+    "type": "video",
+    "title": "Grand Techno video 10",
+    "poster": "assets/videos/posters/video-1.jpg"
+  },
+  {
+    "src": "assets/videos/WhatsApp Video 2026-09-15 at 11.53.33.mp4",
+    "type": "video",
+    "title": "Grand Techno video 11",
+    "poster": "assets/videos/posters/video-2.jpg"
+  },
+  {
+    "src": "assets/videos/WhatsApp Video 2026-09-15 at 11.53.34.mp4",
+    "type": "video",
+    "title": "Grand Techno video 12",
+    "poster": "assets/videos/posters/video-3.jpg"
+  }
+]
