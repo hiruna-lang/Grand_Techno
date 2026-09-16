@@ -6,7 +6,7 @@ from pathlib import Path
 ROOT = Path(__file__).parent
 
 def responsive_images(html):
-    manifest_path = ROOT / 'assets/images/enhanced/manifest.json'
+    manifest_path = ROOT / 'tools/image-manifest.json'
     if not manifest_path.exists():
         return html
     manifest = json.loads(manifest_path.read_text(encoding='utf-8'))

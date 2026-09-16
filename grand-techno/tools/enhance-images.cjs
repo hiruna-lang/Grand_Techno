@@ -3,7 +3,7 @@ const sharp = require('sharp');
 const fs = require('node:fs/promises');
 const path = require('node:path');
 const root = path.resolve(__dirname, '..');
-const output = path.join(root, 'assets/images/enhanced');
+const output = path.join(root, 'assets/images');
 async function enhance(name) {
   const input = path.join(root, 'assets/images', name);
   const meta = await sharp(input).metadata();
@@ -18,7 +18,7 @@ async function enhance(name) {
       .sharpen({ sigma: 0.8, m1: 0.3, m2: 1.2, x1: 2, y2: 4, y3: 6 })
       .webp({ quality: 94, effort: 5, smartSubsample: true })
       .toFile(path.join(output, file));
-    variants.push({ src: `assets/images/enhanced/${file}`, width: info.width, height: info.height, bytes: info.size });
+    variants.push({ src: `assets/images/${file}`, width: info.width, height: info.height, bytes: info.size });
   }
   return [id, { original: name, sourceWidth: meta.width, sourceHeight: meta.height, variants }];
 }
@@ -30,6 +30,6 @@ async function enhance(name) {
   for (const name of names) {
     const [id, entry] = await enhance(name); results[id] = entry;
   }
-  if (!sample) await fs.writeFile(path.join(output, 'manifest.json'), JSON.stringify(results, null, 2) + '\n');
+  if (!sample) await fs.writeFile(path.join(root, 'tools/image-manifest.json'), JSON.stringify(results, null, 2) + '\n');
   console.log(`Enhanced ${names.length} original photos using Lanczos resizing and restrained sharpening; no AI, colour grading or scene changes.`);
 })().catch(error => { console.error(error); process.exit(1); });

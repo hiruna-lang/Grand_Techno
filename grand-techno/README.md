@@ -1,52 +1,28 @@
-# Grand Techno
+# Grand Techno ? project instructions
 
-Seven-page hospitality website built with HTML, CSS, vanilla JavaScript, GSAP and ScrollTrigger. All venue photography comes from the supplied images folder; original files are preserved in `assets/images/`.
+## Folder structure
 
-## Open the website
+- `index.html`, `about.html`, `celebrations.html`, `contact.html`, `gallery.html`, `leisure.html`, `restaurant.html`: website pages.
+- `css/`: shared styling, responsive rules and animations.
+- `js/`: navigation, animations, homepage slideshow, gallery, footer and contact behaviour.
+- `assets/images/`: original venue photos and responsive WebP sizes. Multiple sizes support different screens; they are not unnecessary duplicates.
+- `assets/videos/`: gallery videos and preview posters.
+- `assets/icons/`, `assets/logo/`: graphic assets.
+- `assets/vendor/`: bundled animation libraries. Keep their license headers.
+- `assets/gallery-media.json`: gallery media information used by the authoring helper.
+- `tools/`: image-processing script, dependency declaration and image manifest.
+- `build-pages.py`, `image_assets.py`, `gallery_media.py`: optional authoring helpers.
 
-Open this folder in VS Code. Right-click `index.html` and choose **Open with Live Server**. No npm install or build is required. Alternatively, run `python -m http.server 5500` from this folder and visit `http://localhost:5500`.
+## Working on the website
 
-The supplied GSAP 3.13.0 and ScrollTrigger scripts are local, so animation does not depend on a CDN at runtime. Google Fonts requires internet access; Georgia and Arial provide fallback typography. Core content and navigation remain accessible without JavaScript. Gallery filtering, the photo viewer, and inquiry preparation require JavaScript.
+Open `index.html` with Live Server. The site runs without installing Python or Node dependencies. Google Fonts, Google Maps and external contact links require an internet connection.
 
-## Client details
+Edit the HTML, CSS and JavaScript files for website changes. Preserve relative asset paths when moving files. Keep the original photos for future image processing.
 
-WhatsApp and calls are configured to the supplied number **072 483 2444** (`+94 72 483 2444`, international digits `94724832444`). The inquiry form now opens WhatsApp for this recipient.
+The optional `build-pages.py` script overwrites all seven HTML pages. It is not required to preview the website. Maintain its templates alongside direct HTML edits before using it again; generated pages may need formatting afterwards.
 
-### Remaining setup before publishing
+To regenerate image variants from the repository root, install the optional image-tool dependencies with `npm install --prefix grand-techno/tools`, run `npm run enhance --prefix grand-techno/tools`, then run `python grand-techno/image_assets.py`. These commands are for authoring only.
 
-- In `js/main.js`, set `GRAND_TECHNO.whatsappNumber` and `phoneNumber` to verified international-format digits, without `+` or spaces. Set `phoneDisplay` to the desired human-readable format.
-- Set `mapsUrl` to the verified Google Maps URL. Replace the clearly labelled map illustration with a verified embed if desired.
-- Replace the opening-hours and contact placeholders in the HTML. Footer social names are intentionally non-interactive until official profile URLs are known.
-- Confirm all descriptions and available facilities with the venue, particularly pool access, stay arrangements, dining options and private events.
-- Replace the SVG monogram and HTML wordmark with the client logo when available.
-- After a domain is chosen, make Open Graph image URLs absolute and add canonical URLs. No unverified domain or address is assumed.
+## Contact and media
 
-## Reservation behavior
-
-Experience inquiry links preselect the appropriate form category. Required fields use browser validation; the date input disallows earlier dates. The form prepares an encoded WhatsApp message with name, phone, email, inquiry type, date, time, guest count and message. With a configured number, submission opens WhatsApp for the visitor to review and send; a manual link handles blocked popups. With no verified number, submission produces a selectable and copyable inquiry without opening an invalid recipient. The site stores no inquiry data and has no backend. Sending an inquiry is not a confirmed booking.
-
-## Editing and structure
-
-Edit the seven HTML files directly. Shared styling lives in `css/style.css`, `responsive.css`, and `animations.css`. Shared behavior lives in `js/main.js` and `animations.js`; gallery and contact behavior use their own small files.
-
-`build-pages.py` is an optional authoring helper used to generate the static pages. It is not needed to run the website. If you use it again, edit content there first: running it replaces all seven HTML files. It does not replace CSS, JavaScript or images.
-
-Reduced-motion preferences disable large transitions and parallax. The mobile navigation manages focus, Escape dismissal and background interaction. The native dialog photo viewer supports Escape, arrow keys and return focus. Gallery categories use pressed-state buttons and live result counts.
-
-## Animation reference
-
-ScrollTrigger registration, viewport reveals and responsive animation contexts follow the [official GSAP documentation](https://gsap.com/docs/v3/Plugins/ScrollTrigger/). Bundled GSAP scripts retain their upstream license headers; see the linked GSAP license in those files.
-
-
-## Natural photo enhancement
-
-The website serves non-AI WebP derivatives from `assets/images/enhanced/`. All 42 original JPEGs remain unchanged. Variants use Lanczos resizing and restrained sharpening without scene reconstruction, colour grading or generated details. Each image has three responsive sizes; large landscape versions reach 2400 pixels wide, with upscaling limited to 2? the source dimensions. Upscaling improves rendering control but does not recover missing photographic detail.
-
-The gallery viewer opens the largest version. All seven pages use shallow image banners beneath the unchanged navigation: a real venue photo, dark gradient, white title and subtitle. The home banner also includes reservation and exploration links. Inner banners are 280px on desktop and 210px on mobile before content-driven expansion; the home banner is 350px on desktop and 290px on mobile. Responsive image sources account for the banner width. Photos fade in without zooming, and no banner uses viewport-height sizing.
-
-Optional regeneration: run `npm install --prefix grand-techno/tools` and `npm run enhance --prefix grand-techno/tools` from the repository root, followed by `python grand-techno/image_assets.py`. These tools are for authoring only; the website still needs no runtime build or installation. `build-pages.py` also applies the responsive image manifest automatically.
-
-Processing uses [Sharp sharpening](https://sharp.pixelplumbing.com/api-operation/#sharpen) and [resizing](https://sharp.pixelplumbing.com/api-resize/).
-
-
-The homepage now has a dedicated garden-photo opening with a gold-and-white heading, reservation and WhatsApp buttons, and an overlapping five-item experience strip. Its content-driven height starts at 520px on desktop; mobile uses natural content height. The six inner-page banners and existing navbar are unchanged.
+Contact configuration is in `js/main.js`. Inquiries are prepared for WhatsApp; the site has no booking backend. Gallery videos open with native playback controls. Original photos, responsive image sizes and video posters must remain available at their referenced paths.
