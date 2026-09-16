@@ -26,3 +26,9 @@ To regenerate image variants from the repository root, install the optional imag
 ## Contact and media
 
 Contact configuration is in `js/main.js`. Inquiries are prepared for WhatsApp; the site has no booking backend. Gallery videos open with native playback controls. Original photos, responsive image sizes and video posters must remain available at their referenced paths.
+
+## Search metadata
+
+Page titles, descriptions, canonical URLs, sharing metadata and JSON-LD are maintained by `tools/seo.py`. Run `python grand-techno/tools/seo.py` from the repository root after editing SEO settings. It updates only document heads, `sitemap.xml` and `robots.txt`; it does not rewrite page bodies. The optional page generator also applies these settings.
+
+The configured public URL is `https://grandtechnoalupathwila.com`. Canonicals and the sitemap assume this folder's `index.html` will be served at the domain root, not at `/grand-techno/`. Confirm that URL layout when hosting is requested. No hosting or Search Console submission has been performed. Do not invent opening hours, prices, reviews or coordinates in structured data.
