@@ -116,3 +116,112 @@ main,.section,.split-copy,.story-copy,.inquiry-panel,.footer-column{min-width:0}
  .premium-footer .brand-location { font-size: 6px; }
  .premium-footer .brand-tagline { font-size: 10px; }
 }
+
+/* Center the navbar name lines beside the logo. */
+.site-header .brand-name { text-align: center; }
+
+/* Shared, centered brand signature with a slightly stronger gold tagline. */
+.premium-footer .brand-name { text-align: center; }
+.site-header .brand-tagline,
+.premium-footer .brand-tagline {
+  color: #ffdf85;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: .14em;
+}
+@media (max-width: 767px) {
+  .site-header .brand-tagline,
+  .premium-footer .brand-tagline { font-size: 12px; letter-spacing: .12em; }
+}
+@media (max-width: 359px) {
+  .site-header .brand-tagline,
+  .premium-footer .brand-tagline { font-size: 11px; }
+}
+
+/* Soft yellow footer with readable warm charcoal and gold accents. */
+.site-footer.premium-footer { background: var(--red); color: #332e1c; border-color: #b8aa52; }
+.premium-footer .brand,
+.premium-footer .brand-name,
+.premium-footer .brand-location { color: #382c1a; }
+.premium-footer .footer-description,
+.premium-footer .footer-column a,
+.premium-footer address a,
+.premium-footer .footer-copyright,
+.premium-footer .footer-place > p,
+.premium-footer .additional-call-label { color: #403922; }
+.premium-footer h2,
+.premium-footer .footer-disclosure > summary,
+.premium-footer .brand-tagline,
+.premium-footer .footer-handwriting,
+.premium-footer .footer-small-motto,
+.premium-footer .footer-contact-icon,
+.premium-footer .footer-social-icon,
+.premium-footer .footer-social > p,
+.premium-footer .footer-flourish,
+.premium-footer .footer-closing > p,
+.premium-footer .footer-place > span { color: #604511; }
+.premium-footer .footer-column a:hover,
+.premium-footer address a:hover,
+.premium-footer a.footer-social-icon:hover { color: var(--red); }
+.premium-footer .footer-about,
+.premium-footer .footer-column,
+.premium-footer .footer-get-in-touch,
+.premium-footer .footer-social,
+.premium-footer .footer-base,
+.premium-footer .footer-place { border-color: #b8aa52; }
+
+.premium-footer .footer-contact-icon,
+.premium-footer .footer-social-icon { border-color: #80702d; }
+
+/* Rose footer with a framed brand signature. */
+.premium-footer .footer-about > .brand {
+  padding: 12px 8px;
+  border: 1px solid #9a5058;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, .2);
+}
+.premium-footer .footer-about,
+.premium-footer .footer-column,
+.premium-footer .footer-get-in-touch,
+.premium-footer .footer-social,
+.premium-footer .footer-base,
+.premium-footer .footer-place,
+.site-footer.premium-footer { border-color: #b97980; }
+.premium-footer .footer-contact-icon,
+.premium-footer .footer-social-icon { border-color: #88505a; }
+
+/* Match the footer to the header's Grand Techno red. */
+.site-footer.premium-footer { color: #fff; border-color: #ffffff30; }
+.premium-footer .brand,
+.premium-footer .brand-name,
+.premium-footer .brand-location,
+.premium-footer .footer-description,
+.premium-footer .footer-column a,
+.premium-footer address a,
+.premium-footer .footer-copyright,
+.premium-footer .footer-place > p,
+.premium-footer .additional-call-label { color: #fff; }
+.premium-footer h2,
+.premium-footer .footer-disclosure > summary,
+.premium-footer .brand-tagline,
+.premium-footer .footer-handwriting,
+.premium-footer .footer-small-motto,
+.premium-footer .footer-contact-icon,
+.premium-footer .footer-social-icon,
+.premium-footer .footer-social > p,
+.premium-footer .footer-flourish,
+.premium-footer .footer-closing > p,
+.premium-footer .footer-place > span { color: #ffe2a1; }
+.premium-footer .footer-column a:hover,
+.premium-footer address a:hover,
+.premium-footer a.footer-social-icon:hover { color: #ffe2a1; }
+.premium-footer .footer-about,
+.premium-footer .footer-column,
+.premium-footer .footer-get-in-touch,
+.premium-footer .footer-social,
+.premium-footer .footer-base,
+.premium-footer .footer-place { border-color: #ffe2a14d; }
+.premium-footer .footer-about > .brand { background: #ffffff08; border-color: #ffe2a180; }
+.premium-footer .footer-contact-icon,
+.premium-footer .footer-social-icon { border-color: #ffe2a199; }
+.premium-footer .footer-flourish > span { background: #ffe2a180; }
