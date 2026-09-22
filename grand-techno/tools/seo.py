@@ -37,7 +37,7 @@ def apply_seo(html, slug):
  if image_url and not image_url.startswith('https://'):
   image_url = BASE_URL + '/' + image_url.lstrip('/')
   head = head.replace(image[0], '<meta property="og:image" content="'+image_url+'"')
- business = {'@type':'LocalBusiness', '@id':BASE_URL+'/#business', 'name':'Grand Techno Alupathwila', 'alternateName':'Grand Techno', 'url':BASE_URL+'/', 'telephone':'+94777530659', 'email':'info@grandtechno.lk', 'address':{'@type':'PostalAddress','addressLocality':'Alupathwila','addressCountry':'LK'}, 'sameAs':['https://www.facebook.com/grandtechnoalupathwila/']}
+ business = {'@type':'LocalBusiness', '@id':BASE_URL+'/#business', 'name':'Grand Techno Alupathwila', 'alternateName':'Grand Techno', 'url':BASE_URL+'/', 'telephone':'+94777530659', 'email':'Grandtechno@technoind.biz', 'address':{'@type':'PostalAddress','addressLocality':'Alupathwila','addressCountry':'LK'}, 'sameAs':['https://www.facebook.com/grandtechnoalupathwila/']}
  business['logo'] = BASE_URL + '/assets/logo/grand-techno-logo.png'
  if image_url: business['image'] = image_url
  website = {'@type':'WebSite','@id':BASE_URL+'/#website','url':BASE_URL+'/','name':'Grand Techno Alupathwila','alternateName':'Grand Techno','publisher':{'@id':BASE_URL+'/#business'},'inLanguage':'en'}

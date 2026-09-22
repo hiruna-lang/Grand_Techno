@@ -88,5 +88,355 @@
     "type": "video",
     "title": "Grand Techno video 12",
     "poster": "assets/videos/posters/video-3.jpg"
+  },
+  {
+    "src": "assets/videos/grand-techno-studio.mp4",
+    "type": "video",
+    "title": "Grand Techno Studio",
+    "poster": "assets/videos/posters/grand-techno-studio.jpg"
+  },
+  {
+    "src": "assets/images/34cddf3f-6b3c-4537-9f03-0e988232b6d3-gallery.webp",
+    "width": 1066,
+    "height": 1600,
+    "type": "image",
+    "category": "Celebrations",
+    "title": "An evening portrait in the gardens"
+  },
+  {
+    "src": "assets/images/4bde2b77-1bc1-488f-9aa8-7de2b71be2c6-gallery.webp",
+    "width": 1600,
+    "height": 1067,
+    "type": "image",
+    "category": "Celebrations",
+    "title": "A couple at Grand Techno Studio"
+  },
+  {
+    "src": "assets/images/5040faf6-4760-4c78-92d6-df956552bb15-gallery.webp",
+    "width": 1273,
+    "height": 1065,
+    "type": "image",
+    "category": "Celebrations",
+    "title": "A birthday celebration under the lights"
+  },
+  {
+    "src": "assets/images/52E2CB64-5B2D-4361-AED1-D2B753DD4728-gallery.webp",
+    "width": 1200,
+    "height": 1600,
+    "type": "image",
+    "category": "Night View",
+    "title": "Illuminated garden pavilion"
+  },
+  {
+    "src": "assets/images/570631f1-dcdf-4ec6-b02b-381f1ad13a32-gallery.webp",
+    "width": 1600,
+    "height": 1066,
+    "type": "image",
+    "category": "Celebrations",
+    "title": "Red lanterns above the celebration aisle"
+  },
+  {
+    "src": "assets/images/9376263b-6083-47e7-9a83-ba01bea45623-gallery.webp",
+    "width": 1600,
+    "height": 1066,
+    "type": "image",
+    "category": "Leisure Park",
+    "title": "Open-air pavilions and gardens"
+  },
+  {
+    "src": "assets/images/95938012-f580-483f-af8c-4f5eed761e6e-gallery.webp",
+    "width": 1080,
+    "height": 720,
+    "type": "image",
+    "category": "Celebrations",
+    "title": "Portrait beside the illuminated pavilion"
+  },
+  {
+    "src": "assets/images/9ec5851f-4e84-4ecb-ab4f-e7605ff7d97c-gallery.webp",
+    "width": 1067,
+    "height": 1600,
+    "type": "image",
+    "category": "Celebrations",
+    "title": "A special moment at Grand Techno Studio"
+  },
+  {
+    "src": "assets/images/b93a999b-222e-4801-bb48-994b8cd19cfe-gallery.webp",
+    "width": 1452,
+    "height": 1066,
+    "type": "image",
+    "category": "Restaurant",
+    "title": "Garden dining beneath red lanterns"
+  },
+  {
+    "src": "assets/images/BE6F534A-77FB-4F0E-988E-3C43E4467A62-gallery.webp",
+    "width": 1200,
+    "height": 1600,
+    "type": "image",
+    "category": "Night View",
+    "title": "Palm-lined path after dark"
+  },
+  {
+    "src": "assets/images/c299e11f-6785-497d-8588-85aaa17c9109-gallery.webp",
+    "width": 1600,
+    "height": 1066,
+    "type": "image",
+    "category": "Stay",
+    "title": "White cottages beside the garden walkway"
+  },
+  {
+    "src": "assets/images/FB12F2E5-C12C-43E9-92B9-626A2E7E6B01-gallery.webp",
+    "width": 1200,
+    "height": 1600,
+    "type": "image",
+    "category": "Night View",
+    "title": "Lanterns lighting the garden"
+  },
+  {
+    "src": "assets/images/IMG_0445-gallery.webp",
+    "width": 1600,
+    "height": 1067,
+    "type": "image",
+    "category": "Leisure Park",
+    "title": "Pavilion overlooking the fields"
+  },
+  {
+    "src": "assets/images/IMG_0446-gallery.webp",
+    "width": 1600,
+    "height": 1066,
+    "type": "image",
+    "category": "Celebrations",
+    "title": "Floral ring beside the fields"
+  },
+  {
+    "src": "assets/images/IMG_0447-gallery.webp",
+    "width": 1600,
+    "height": 1253,
+    "type": "image",
+    "category": "Celebrations",
+    "title": "Flowers arranged for a special occasion"
+  },
+  {
+    "src": "assets/images/IMG_0448-gallery.webp",
+    "width": 1600,
+    "height": 1067,
+    "type": "image",
+    "category": "Night View",
+    "title": "Private pavilion illuminated at night"
+  },
+  {
+    "src": "assets/images/IMG_0450-gallery.webp",
+    "width": 1600,
+    "height": 1067,
+    "type": "image",
+    "category": "Celebrations",
+    "title": "Birthday decorations in the garden"
+  },
+  {
+    "src": "assets/images/IMG_0451-gallery.webp",
+    "width": 1600,
+    "height": 1067,
+    "type": "image",
+    "category": "Leisure Park",
+    "title": "Palm trees and colourful garden lanterns"
+  },
+  {
+    "src": "assets/images/IMG_0452-gallery.webp",
+    "width": 1600,
+    "height": 1067,
+    "type": "image",
+    "category": "Leisure Park",
+    "title": "Pavilions nestled among the greenery"
+  },
+  {
+    "src": "assets/images/IMG_0453-gallery.webp",
+    "width": 1600,
+    "height": 1067,
+    "type": "image",
+    "category": "Leisure Park",
+    "title": "White garden bridge"
+  },
+  {
+    "src": "assets/images/IMG_0861-gallery.webp",
+    "width": 1600,
+    "height": 1067,
+    "type": "image",
+    "category": "Celebrations",
+    "title": "A couple sharing an evening in the gardens"
+  },
+  {
+    "src": "assets/images/IMG_1505-gallery.webp",
+    "width": 1200,
+    "height": 1600,
+    "type": "image",
+    "category": "Night View",
+    "title": "Grand Techno beneath the evening sky"
+  },
+  {
+    "src": "assets/images/IMG_1537-gallery.webp",
+    "width": 1200,
+    "height": 1600,
+    "type": "image",
+    "category": "Night View",
+    "title": "Venue lights across the lawn"
+  },
+  {
+    "src": "assets/images/IMG_1683-gallery.webp",
+    "width": 1200,
+    "height": 1600,
+    "type": "image",
+    "category": "Night View",
+    "title": "A view of the grounds at night"
+  },
+  {
+    "src": "assets/images/IMG_2352-gallery.webp",
+    "width": 1200,
+    "height": 1600,
+    "type": "image",
+    "category": "Leisure Park",
+    "title": "Tropical greenery beside the pavilions"
+  },
+  {
+    "src": "assets/images/IMG_2370.JPG-gallery.webp",
+    "width": 1200,
+    "height": 1600,
+    "type": "image",
+    "category": "Restaurant",
+    "title": "Garden refreshment counter"
+  },
+  {
+    "src": "assets/images/IMG_3413-gallery.webp",
+    "width": 1200,
+    "height": 1600,
+    "type": "image",
+    "category": "Night View",
+    "title": "Lanterns and a garden pavilion at night"
+  },
+  {
+    "src": "assets/images/IMG_3417-gallery.webp",
+    "width": 1200,
+    "height": 1600,
+    "type": "image",
+    "category": "Night View",
+    "title": "Golden lanterns along the walkway"
+  },
+  {
+    "src": "assets/images/IMG_3418-gallery.webp",
+    "width": 1200,
+    "height": 1600,
+    "type": "image",
+    "category": "Stay",
+    "title": "White cottage illuminated after dark"
+  },
+  {
+    "src": "assets/images/IMG_3419-gallery.webp",
+    "width": 1200,
+    "height": 1600,
+    "type": "image",
+    "category": "Night View",
+    "title": "Garden paths and colourful evening lights"
+  },
+  {
+    "src": "assets/images/IMG_3422-gallery.webp",
+    "width": 1200,
+    "height": 1600,
+    "type": "image",
+    "category": "Night View",
+    "title": "Open-air pavilion beneath the night sky"
+  },
+  {
+    "src": "assets/images/IMG_3423-gallery.webp",
+    "width": 1200,
+    "height": 1600,
+    "type": "image",
+    "category": "Night View",
+    "title": "Illuminated tree beside the garden path"
+  },
+  {
+    "src": "assets/images/IMG_3424-gallery.webp",
+    "width": 1200,
+    "height": 1600,
+    "type": "image",
+    "category": "Night View",
+    "title": "Pathways through the evening gardens"
+  },
+  {
+    "src": "assets/images/IMG_3425-gallery.webp",
+    "width": 1200,
+    "height": 1600,
+    "type": "image",
+    "category": "Night View",
+    "title": "A warmly lit pavilion entrance"
+  },
+  {
+    "src": "assets/images/IMG_3427-gallery.webp",
+    "width": 1200,
+    "height": 1600,
+    "type": "image",
+    "category": "Night View",
+    "title": "Palm trees beside the illuminated path"
+  },
+  {
+    "src": "assets/images/IMG_3428-gallery.webp",
+    "width": 1200,
+    "height": 1600,
+    "type": "image",
+    "category": "Night View",
+    "title": "Walkway leading to a glowing pavilion"
+  },
+  {
+    "src": "assets/images/IMG_3432-gallery.webp",
+    "width": 1200,
+    "height": 1600,
+    "type": "image",
+    "category": "Night View",
+    "title": "Garden pavilions under evening lights"
+  },
+  {
+    "src": "assets/images/IMG_3435-gallery.webp",
+    "width": 1200,
+    "height": 1600,
+    "type": "image",
+    "category": "Restaurant",
+    "title": "Dining tables beneath colourful lanterns"
+  },
+  {
+    "src": "assets/images/IMG_3437-gallery.webp",
+    "width": 1200,
+    "height": 1600,
+    "type": "image",
+    "category": "Night View",
+    "title": "A lantern-lit garden walkway"
+  },
+  {
+    "src": "assets/images/IMG_3449-gallery.webp",
+    "width": 1200,
+    "height": 1600,
+    "type": "image",
+    "category": "Celebrations",
+    "title": "Red carpet beneath the lantern canopy"
+  },
+  {
+    "src": "assets/images/IMG_3457-gallery.webp",
+    "width": 1200,
+    "height": 1600,
+    "type": "image",
+    "category": "Leisure Park",
+    "title": "Sunny garden and white pavilion"
+  },
+  {
+    "src": "assets/images/IMG_3528-gallery.webp",
+    "width": 1600,
+    "height": 1200,
+    "type": "image",
+    "category": "Night View",
+    "title": "Golden lanterns above the garden seating"
+  },
+  {
+    "src": "assets/images/IMG_4328.JPG-gallery.webp",
+    "width": 1200,
+    "height": 1600,
+    "type": "image",
+    "category": "Leisure Park",
+    "title": "Colourful lanterns and tropical gardens"
   }
 ]
