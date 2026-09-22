@@ -34,8 +34,7 @@ def link(label,href):
 def inquiry(kind):
  return 'contact.html?inquiry='+kind.replace(' ','%20')+'#inquiry'
 def brand(full=False):
- if full: return '<a class="brand" href="index.html" aria-label="Grand Techno home"><img class="official-brand-logo" src="assets/logo/grand-techno-logo.png" alt="Grand Techno Alupathwila" width="1743" height="1430" decoding="async"></a>'
- return '<a class="brand" href="index.html" aria-label="Grand Techno home"><span class="official-brand-mark" aria-hidden="true"><img src="assets/logo/grand-techno-logo.png" alt="" width="1743" height="1430" decoding="async"></span><span class="brand-name">GRAND TECHNO<span class="brand-location">ALUPATHWILA</span></span></a>'
+ return '<a class="brand" href="index.html" aria-label="Grand Techno home"><span class="official-brand-mark" aria-hidden="true"><img src="assets/logo/grand-techno-logo.png" alt="" width="1743" height="1430" decoding="async"></span><span class="brand-name">GRAND TECHNO<span class="brand-location">ALUPATHWILA</span><span class="brand-tagline">Hidden Paradise</span></span></a>'
 def nav(page):
  return ''.join(f'<a href="{slug}.html" {"aria-current=page" if slug==page else ""}>{label}</a>' for slug,label in NAV)
 def header(page):
