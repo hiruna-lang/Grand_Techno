@@ -13,7 +13,7 @@ PAGES = {
  'celebrations': ('Weddings & Celebrations | Grand Techno Alupathwila', 'Plan a wedding, birthday, private gathering or corporate event at Grand Techno in Alupathwila. Explore garden settings and send your event inquiry.'),
  'gallery': ('Photo & Video Gallery | Grand Techno Alupathwila', 'View real photos and videos of Grand Techno in Alupathwila, including dining spaces, the swimming pool, gardens, celebrations and evening views.'),
  'about': ('About Grand Techno | Alupathwila, Sri Lanka', 'Meet Grand Techno in Alupathwila, Sri Lanka, where dining, gardens, leisure and celebrations come together. Explore the venue and its experiences.'),
- 'contact': ('Contact & Reservations | Grand Techno Alupathwila', 'Contact Grand Techno in Alupathwila on +94 72 483 2444. Find the location and send dining, leisure or celebration inquiries by WhatsApp.')
+ 'contact': ('Contact & Reservations | Grand Techno Alupathwila', 'Contact Grand Techno in Alupathwila on +94 77 753 0659. Find the location and send dining, leisure or celebration inquiries by WhatsApp.')
 }
 
 def page_url(slug):
@@ -37,7 +37,8 @@ def apply_seo(html, slug):
  if image_url and not image_url.startswith('https://'):
   image_url = BASE_URL + '/' + image_url.lstrip('/')
   head = head.replace(image[0], '<meta property="og:image" content="'+image_url+'"')
- business = {'@type':'LocalBusiness', '@id':BASE_URL+'/#business', 'name':'Grand Techno Alupathwila', 'alternateName':'Grand Techno', 'url':BASE_URL+'/', 'telephone':'+94724832444', 'email':'info@grandtechno.lk', 'address':{'@type':'PostalAddress','addressLocality':'Alupathwila','addressCountry':'LK'}, 'sameAs':['https://www.facebook.com/grandtechnoalupathwila/']}
+ business = {'@type':'LocalBusiness', '@id':BASE_URL+'/#business', 'name':'Grand Techno Alupathwila', 'alternateName':'Grand Techno', 'url':BASE_URL+'/', 'telephone':'+94777530659', 'email':'info@grandtechno.lk', 'address':{'@type':'PostalAddress','addressLocality':'Alupathwila','addressCountry':'LK'}, 'sameAs':['https://www.facebook.com/grandtechnoalupathwila/']}
+ business['logo'] = BASE_URL + '/assets/logo/grand-techno-logo.png'
  if image_url: business['image'] = image_url
  website = {'@type':'WebSite','@id':BASE_URL+'/#website','url':BASE_URL+'/','name':'Grand Techno Alupathwila','alternateName':'Grand Techno','publisher':{'@id':BASE_URL+'/#business'},'inLanguage':'en'}
  page = {'@type':{'about':'AboutPage','contact':'ContactPage','gallery':'CollectionPage'}.get(slug,'WebPage'),'@id':page_url(slug)+'#webpage','url':page_url(slug),'name':title,'description':description,'inLanguage':'en','isPartOf':{'@id':BASE_URL+'/#website'},'about':{'@id':BASE_URL+'/#business'}}

@@ -212,3 +212,36 @@ body[data-page="index"] #discover{padding-top:58px}
 .gallery-video-preview{position:relative;background:#17211d}
 .gallery-video-preview>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .gallery-video-preview>span{position:relative;z-index:1;background:#0008;color:#fff}
+
+/* Official supplied artwork; navbar shows the symbol without shrinking its wordmark. */
+.official-brand-mark{display:block;position:relative;flex:0 0 48px;width:48px;height:59px;overflow:hidden}
+.official-brand-mark img{position:absolute;left:-42.5px;top:0;width:134.7px;height:auto;max-width:none}
+.official-brand-logo{display:block;width:190px;height:auto;object-fit:contain}
+.premium-footer .brand{display:inline-flex}
+.premium-footer .official-brand-logo{width:190px;max-width:100%}
+.brand-card .official-brand-logo{width:180px;max-width:100%}
+.page-intro .official-brand-logo{width:160px;height:auto}
+@media(max-width:767px){.official-brand-mark{transform:scale(.82);transform-origin:left center;margin-right:-8px}.premium-footer .official-brand-logo{width:135px}}
+
+/* Additional telephone contacts remain separate from WhatsApp routing. */
+.additional-call-numbers{display:grid;gap:8px;margin-top:18px;padding-top:12px;border-top:1px solid var(--line)}
+.additional-call-numbers a{display:flex;flex-direction:column;justify-content:center;min-height:44px;gap:3px}
+.additional-call-numbers small{font-size:11px;color:var(--muted)}
+.additional-call-numbers a>span{font-size:13px;color:var(--red)}
+.premium-footer .additional-call-label{display:block;font-size:10px;line-height:1.4;color:#c4c5bc;margin-bottom:2px}
+
+/* Homepage Day Out package */
+.day-out-package { padding-block: 40px; }
+.day-out-layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); max-width: 1240px; gap: clamp(24px, 3vw, 40px); align-items: center; }
+.day-out-copy h2 { margin: 10px 0 16px; font-size: clamp(32px, 3vw, 44px); }
+.day-out-copy .day-out-price { margin-block: 16px; color: var(--red); }
+.day-out-price strong { font-size: 26px; }
+.day-out-price span { color: var(--muted); }
+.day-out-copy .btn { margin-top: 18px; }
+.day-out-poster { display: block; min-width: 0; width: 100%; max-width: 480px; justify-self: center; }
+.day-out-poster img { width: 100%; height: auto; object-fit: contain; border-radius: 12px; border: 1px solid var(--line); }
+.day-out-poster > span { display: block; margin-top: 10px; text-align: center; color: var(--red); font-size: 13px; }
+@media (max-width: 800px) {
+  .day-out-layout { grid-template-columns: 1fr; }
+  .day-out-package { padding-block: 32px; }
+}

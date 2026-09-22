@@ -1,14 +1,15 @@
 /* Set verified venue details here before publishing. International digits only,
    e.g. country code followed by the number, without a leading + or spaces. */
 window.GRAND_TECHNO = Object.freeze({
-  whatsappNumber: '94724832444',
-  phoneNumber: '94724832444',
-  phoneDisplay: '+94 72 483 2444',
+  whatsappNumber: '94777530659',
+  phoneNumber: '94777530659',
+  phoneDisplay: '+94 77 753 0659',
   mapsUrl: 'https://www.google.com/maps/search/?api=1&query=Grand%20Techno%20Alupathwila%20Sri%20Lanka',
 });
 
 (() => {
   'use strict';
+  document.querySelectorAll('[data-contact-whatsapp]').forEach(el => { el.textContent = '+94 77 753 0659'; });
   const header = document.querySelector('.site-header');
   const toggle = document.querySelector('.menu-toggle');
   const menu = document.querySelector('.mobile-menu');
