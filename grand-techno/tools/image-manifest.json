@@ -149,31 +149,6 @@
       }
     ]
   },
-  "1607": {
-    "original": "IMG_1607.JPG.jpeg",
-    "sourceWidth": 1440,
-    "sourceHeight": 960,
-    "variants": [
-      {
-        "src": "assets/images/IMG_1607-720.webp",
-        "width": 720,
-        "height": 480,
-        "bytes": 180152
-      },
-      {
-        "src": "assets/images/IMG_1607-1440.webp",
-        "width": 1440,
-        "height": 960,
-        "bytes": 511736
-      },
-      {
-        "src": "assets/images/IMG_1607-2400.webp",
-        "width": 2400,
-        "height": 1600,
-        "bytes": 1000210
-      }
-    ]
-  },
   "1608": {
     "original": "IMG_1608.JPG.jpeg",
     "sourceWidth": 1440,
