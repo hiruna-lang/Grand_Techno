@@ -1,4 +1,4 @@
-# Grand Techno ? project instructions
+# Grand Techno - project instructions
 
 ## Folder structure
 
@@ -32,3 +32,11 @@ Contact configuration is in `js/main.js`. Inquiries are prepared for WhatsApp; t
 Page titles, descriptions, canonical URLs, sharing metadata and JSON-LD are maintained by `tools/seo.py`. Run `python grand-techno/tools/seo.py` from the repository root after editing SEO settings. It updates only document heads, `sitemap.xml` and `robots.txt`; it does not rewrite page bodies. The optional page generator also applies these settings.
 
 The configured public URL is `https://grandtechnoalupathwila.com`. Canonicals and the sitemap assume this folder's `index.html` will be served at the domain root, not at `/grand-techno/`. Confirm that URL layout when hosting is requested. No hosting or Search Console submission has been performed. Do not invent opening hours, prices, reviews or coordinates in structured data.
+
+## Launch checks
+
+Serve the website folder at the domain root. Publish the HTML pages (including 404.html), css/, js/, referenced assets/, robots.txt and sitemap.xml. Keep authoring scripts, tools/, backups and Git files outside the public document root.
+
+Configure HTTPS, redirect HTTP and the alternate www hostname to https://grandtechnoalupathwila.com, and configure the host to serve 404.html with HTTP status 404 for missing URLs. Do not redirect missing URLs to the homepage. Enable compression and appropriate caching, and verify MP4 playback and range requests. Exact settings depend on the chosen host.
+
+Confirm opening hours with the venue. Only the verified Facebook profile is currently shown. Test the mobile menu, gallery, video playback and WhatsApp inquiry flow in desktop and mobile browsers before public launch.
